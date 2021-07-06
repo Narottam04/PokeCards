@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+        integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="{{packLogo[0].images.symbol}}" alt="header-logo" class="header-logo">
+        <div class="search-bar">
+            <input type="text" id="search" onkeyup="sort()" placeholder="Search Pokemon">
+            <i class="fas fa-search fa-2x"></i>
+        </div>
+    </header>
+
+    {{ content | safe }}
+
+    <!-- foooter -->
+    <section class="footer">
+        <p>This website is not produced, endorsed, supported, or affiliated with Nintendo or The Pokémon Company.
+        </p>
+        <b>Made with ❤️ by Narottam</b>
+        <div class="social">
+            <a href="">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="">
+                <i class="far fa-envelope fa-2x"></i>
+            </a>
+        </div>
+    </section>
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>

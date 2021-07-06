@@ -1,0 +1,65 @@
+---
+title: 'PokeCards'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <!-- font-awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="{{packLogo[0].images.symbol}}" alt="header-logo" class="header-logo">
+        <div class="search-bar">
+            <input type="text" id="search" onkeyup="sortCover()" placeholder="Search for Pokemon Cards Pack " />
+            <i class="fas fa-search fa-2x"></i>
+        </div>
+    </header>
+    <section id="pokeCover">
+        {% for i in range(0, packLogo.length) -%}
+        <div class="pokeItem">
+            <a href="/pokecards/{{packLogo[i].id}}/index.html" class="element element-3 ">
+                <img src="{{packLogo[i].images.logo}}" alt="">
+                <h2>{{packLogo[i].name}}</h2>
+                <p>{{packLogo[i].releaseDate}}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </section>
+
+    <section class="footer">
+        <p>This website is not produced, endorsed, supported, or affiliated with Nintendo or The Pokémon Company.</p>
+        <b>Made with ❤️ by Narottam</b>
+        <div class="social">
+            <a href="">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="">
+                <i class="far fa-envelope fa-2x"></i>
+            </a>
+        </div>
+    </section>
+    <script src="/javascript/cardPack.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+
+    ---
+    title: 'PokeCards'
+    layout: 'layouts/cards.html'
+    ---
+    
+    <!-- cards -->
+    <section id="cards">
+        <div class="gallery" id="lightgallery">
+            {% for image in ex10 %}
+            <a href="{{image.images.large}}">
+                <img src="{{image.images.small}}" alt="{{image.name}}" loading="lazy">
+            </a>
+            {% endfor %}
+        </div>
+    </section> 

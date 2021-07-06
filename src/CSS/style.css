@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ecf0f3;
+  font-family: "Raleway", sans-serif;
+}
+/* logo */
+.header-logo {
+  width: 20%;
+  height: 20%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+/* poke cards */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.gallery img {
+  margin: 3rem;
+}
+
+/* poke cover */
+
+#pokeCover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: auto;
+}
+.element {
+  align-items: center;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.22),
+    rgba(255, 255, 255, 0.25)
+  );
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  height: 290px;
+  justify-content: center;
+  width: 280px;
+  margin: 1rem;
+}
+
+.element-2 {
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.22),
+    rgba(255, 255, 255, 0.25)
+  );
+}
+
+.element img {
+  max-height: 60%;
+  max-width: 60%;
+}
+
+.element h2 {
+  margin-top: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: black;
+  width: 200px;
+  text-align: center;
+}
+
+.element p {
+  color: black;
+  font-size: calc(1rem + 0.3vw);
+}
+
+/* Neumorphic Search Field */
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  outline: none;
+  border: none;
+  width: 500px;
+  margin-bottom: 3rem;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar i {
+  position: absolute;
+  left: 90%;
+  top: 10%;
+  color: #999;
+}
+
+/* footer  */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer p,
+.footer b {
+  font-size: calc(1rem + 0.3vw);
+  padding-bottom: 0.5rem;
+  color: #696363;
+}
+
+.social {
+  padding-top: 1rem;
+}
+.social a {
+  text-decoration: none;
+  color: #696363;
+  padding: 0 0.7rem;
+}
+@media screen and (max-width: 900px) {
+  .header-logo {
+    width: 40%;
+    height: 40%;
+  }
+  .search-bar i {
+    position: absolute;
+    left: 85%;
+    top: 10%;
+  }
+  input {
+    width: 300px;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "POKECARDS",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "directory-tree": "^2.2.9",
+    "fast-glob": "^3.2.6",
+    "file-system": "^1.2.2"
+  }
+}
