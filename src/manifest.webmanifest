@@ -1,0 +1,42 @@
+{
+    "name": "PokeCards",
+    "short_name":"Best app to view pokemon cards.",
+    "start_url":"/index.html",
+    "display": "standalone",
+    "background_color" : "#ecf0f3",
+    "theme_color":"#ecf0f3",
+    "orientation" :"portrait-primary",
+    "icons": [
+        {
+            "src": "/images/favicon42.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/images/favicon72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/images/favicon96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/images/favicon128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/images/favicon144.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/pokemon512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

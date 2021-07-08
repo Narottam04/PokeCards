@@ -1,6 +1,5 @@
 function sortCover() {
     let heading = document.querySelectorAll('.pokeItem');
-    console.log(heading[0].innerText)
     let search = document.getElementById('search').value.toLowerCase();
 
     for (let i = 0; i < heading.length; i++) {
