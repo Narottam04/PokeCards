@@ -1,0 +1,6 @@
+{
+  "appId": "com.webdrip.pokecards",
+  "appName": "PokeCards",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

@@ -11,8 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@capacitor/android": "^3.1.1",
+    "@capacitor/cli": "^3.1.1",
+    "@capacitor/core": "^3.1.1",
     "directory-tree": "^2.2.9",
     "fast-glob": "^3.2.6",
     "file-system": "^1.2.2"
+  },
+  "devDependencies": {
+    "cordova-res": "^0.15.3"
   }
 }
