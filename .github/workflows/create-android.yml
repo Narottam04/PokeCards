@@ -45,7 +45,11 @@ jobs:
 
       - name: Capacitor copy
         run: npx cap copy
-
+      
+      # TODO: Check for folder structure in README for generating splash screen 
+      - name: Generate icons and splash screen to android folder 
+        run:  if [ -d "./resources" ]; then npm install @capacitor/assets --save-dev && npx capacitor-assets generate; fi
+        
       - name: Build app bundle
         run: cd android && ./gradlew bundle && ./gradlew assembleDebug
 
